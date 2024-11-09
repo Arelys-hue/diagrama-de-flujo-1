@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama de Flujo</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .left-column {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .right-column {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .box {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .arrow {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="box">Identificación</div>
+            <div class="box">Selección</div>
+            <div class="box">Elegibilidad</div>
+            <div class="box">Inclusión</div>
+        </div>
+        <div class="right-column">
+            <div class="box">Artículos identificados a través de la búsqueda en bases de datos (n = 303)</div>
+            <div class="arrow">↓</div>
+            <div class="box">Artículos después de eliminar duplicados (n = XX)</div>
+            <div class="arrow">↓</div>
+            <div class="box">Artículos revisados para su inclusión (n = XX)</div>
+            <div class="arrow">→</div>
+            <div class="box">Artículos excluidos con razones específicas (n = XX)</div>
+            <div class="arrow">↓</div>
+            <div class="box">Artículos evaluados a profundidad para verificar su elegibilidad (n = 138)</div>
+            <div class="arrow">→</div>
+            <div class="box">Artículos excluidos con razones específicas (n = XX)</div>
+            <div class="arrow">↓</div>
+            <div class="box">Artículos incluidos en el análisis final (n = 10)</div>
+        </div>
+    </div>
+</body>
+</html>
